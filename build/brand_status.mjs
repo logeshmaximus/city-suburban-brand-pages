@@ -12,7 +12,9 @@ for (const [title, slug] of Object.entries(titles)) {
   const mine = docs.filter((d) => d._id.replace(/^drafts\./, '').endsWith(slug) || d.slug === slug)
   const published = mine.find((d) => !d._id.startsWith('drafts.'))
   const brand = published?.brand || mine[0]?.brand || title.split(' ')[0]
-  const path = `/services/${slugify(brand)}/${slug}/`
+  // the live route drops the brand from the page part: /services/carrier/air-conditioner-repair-chicago/
+  const b = slugify(brand)
+  const path = `/services/${b}/${slug.startsWith(b + '-') ? slug.slice(b.length + 1) : slug}/`
   let live = false
   if (published) live = (await fetch(`https://citysuburbanheating.com${path}`, {redirect: 'follow'})).status === 200
   result[title] = {slug, path, status: published ? 'published' : mine.length ? 'draft' : 'none', live}
