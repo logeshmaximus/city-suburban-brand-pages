@@ -98,6 +98,9 @@ BRAND_CSS = '''<style>
 .cluster-card-media.brand-media{background:#fff}
 .cluster-card-media.brand-media:after{background:linear-gradient(#0000 72%,#09263a12)}
 .cluster-card-media.brand-media img{object-fit:contain;padding:15% 14%}
+.cluster-card-media.brand-media.is-dark{background:var(--collection-charcoal)}
+.cluster-card-media.brand-media.is-dark:after{background:none}
+.brand-panel-logo.is-dark{background:none;box-shadow:none;padding:4px 0}
 .brand-wordmark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 10%;text-align:center;color:var(--collection-charcoal);font-family:var(--font-space-grotesk),sans-serif;font-weight:700;letter-spacing:-.04em;font-size:clamp(28px,3.2vw,42px);line-height:1}
 .brand-wordmark:after{content:"";position:absolute;left:50%;bottom:22%;width:48px;height:3px;margin-left:-24px;background:var(--collection-lime)}
 .brand-panel-logo{position:absolute;z-index:1;right:28px;top:24px;background:#fff;border-radius:10px;padding:10px 14px;box-shadow:0 10px 26px #0000002e;max-width:42%}
@@ -112,6 +115,9 @@ BRAND_CSS = '''<style>
 
 def finish(page, depth, extra_js=''):
     page = page.replace('</head>', BRAND_CSS + '</head>', 1)
+    hub_link = ('../' * depth) or './'
+    page = page.replace('<li class="site-submenu-all"><a href="/services/">All services →</a></li>',
+                        f'<li class="site-submenu-all"><a href="/services/">All services →</a></li><li class="site-submenu-all"><a href="{hub_link}">Brand services →</a></li>', 1)
     page = strip_and_localise(page, depth)
     return page.replace('</body>', NAV_JS + extra_js + '</body>')
 
@@ -140,7 +146,7 @@ for b in brands:
     equip = [e[0].upper() + e[1:] if i == 0 else e for i, e in enumerate(b['equipmentPlural'])]
     cards.append(
         f'<a aria-label="View all {esc(b["name"])} services" class="cluster-card" data-system="{b["slug"]}" href="{b["slug"]}/">' +
-        (f'<span class="cluster-card-media brand-media"><img alt="{esc(b["name"])} logo" decoding="async" loading="lazy" src="{b["brandImage"]}"/>' if b['brandImageKind'] == 'logo' else
+        (f'<span class="cluster-card-media brand-media{" is-dark" if b["brandTile"] == "dark" else ""}"><img alt="{esc(b["name"])} logo" decoding="async" loading="lazy" src="{b["brandImage"]}"/>' if b['brandImageKind'] == 'logo' else
          f'<span class="cluster-card-media"><img alt="{esc(b["name"])}" decoding="async" loading="lazy" src="{b["brandImage"]}"/>' if b['brandImageKind'] == 'photo' else
          f'<span class="cluster-card-media brand-media"><span class="brand-wordmark" aria-hidden="true">{esc(b["name"])}</span>') +
         f'<span class="cluster-card-count">{n} {"service" if n == 1 else "services"}</span></span>'
@@ -178,7 +184,7 @@ for b in brands:
                         f'<p>{name} {esc(equip)}: repair, installation and maintenance for Chicago homes.</p>')
     page = page.replace('>Browse services<', f'>Browse {name} services<')
     panel_bg = f',url(&quot;../{b["brandImage"]}&quot;)' if b['brandImageKind'] == 'photo' else ''
-    panel_logo = (f'<div class="brand-panel-logo"><img alt="{name} logo" src="../{b["brandImage"]}"/></div>' if b['brandImageKind'] == 'logo' else '')
+    panel_logo = (f'<div class="brand-panel-logo{" is-dark" if b["brandTile"] == "dark" else ""}"><img alt="{name} logo" src="../{b["brandImage"]}"/></div>' if b['brandImageKind'] == 'logo' else '')
     page = re.sub(r'<div class="collection-level-stat collection-level-stat-image" data-panel-image="[^"]*" style="background-image:(linear-gradient\(.*?\)),url\(&quot;[^&]*&quot;\)"><span>Heating</span><strong>18</strong><h2>Services<!-- --> in this category</h2>',
                   lambda m: f'<div class="collection-level-stat collection-level-stat-image" style="background-image:{m.group(1)}{panel_bg}"><span>{name}</span><strong>{n}</strong><h2>{"Service" if n == 1 else "Services"} for this brand</h2>{panel_logo}', page, flags=re.S)
     page = page.replace('<p class="collection-kicker">Heating directory</p>', f'<p class="collection-kicker">{name} directory</p>')
@@ -201,6 +207,7 @@ for b in brands:
              if p['image'] else
              f'<a class="collection-card"{future}>'
              f'<span class="collection-card-media collection-card-media-empty" role="img" aria-label="{esc(p["title"])} in Chicago"><span aria-hidden="true">CS</span></span>') +
+            '<span class="collection-card-arrow" aria-hidden="true">→</span>' +
             f'<span class="collection-card-content"><strong>{esc(p["title"])}</strong>'
             f'<span class="collection-card-description">{esc(p["description"])}</span>{note}</span></a>')
     empty = ('<div class="collection-empty" hidden><h3>No matching services</h3><p>Try a broader service name or clear the search.</p>'

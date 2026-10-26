@@ -3,144 +3,343 @@
   "file": "logos/ao-smith.png",
   "commons": "https://commons.wikimedia.org/wiki/File:AO_Smith_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Amana": {
   "file": "logos/amana.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Amana_Corporation_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Bosch": {
   "file": "logos/bosch.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Bosch-logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Buderus": {
   "file": "logos/buderus.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Buderus-logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Daikin": {
   "file": "logos/daikin.png",
   "commons": "https://commons.wikimedia.org/wiki/File:DAIKIN_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Ecobee": {
   "file": "logos/ecobee.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Ecobee_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Fujitsu": {
   "file": "logos/fujitsu.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Fujitsu-Logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Gree": {
   "file": "logos/gree.png",
   "commons": "https://commons.wikimedia.org/wiki/File:GREE_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Goodman": {
   "file": "logos/goodman.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Goodman_Global_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Nest": {
   "file": "logos/nest.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Google_Nest_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Honeywell": {
   "file": "logos/honeywell.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Honeywell_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "LG": {
   "file": "logos/lg.png",
   "commons": "https://commons.wikimedia.org/wiki/File:LG_logo_(2014).svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Lennox": {
   "file": "logos/lennox.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Lennox_International_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Mitsubishi": {
   "file": "logos/mitsubishi.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Logo_Mitsubishi_Electric_(MR_SLIM).png",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Carrier": {
   "file": "logos/carrier.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Carrier_Corporation.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Noritz": {
   "file": "logos/noritz.png",
   "commons": "https://commons.wikimedia.org/wiki/File:NORITZ_logo.png",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Rheem": {
   "file": "logos/rheem.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Rheem_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Rinnai": {
   "file": "logos/rinnai.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Rinnai_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Trane": {
   "file": "logos/trane.png",
   "commons": "https://commons.wikimedia.org/wiki/File:TraneTechnologieslogo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Viessmann": {
   "file": "logos/viessmann.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Viessman_logo_and_claim.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Bryant": {
-  "file": "logos/bryant.jpg",
-  "commons": "https://commons.wikimedia.org/wiki/File:Bryant_Heating-Cooling_Sign,_Over-the-Rhine,_Cincinnati,_OH_(47352375341).jpg",
-  "license": "CC0",
-  "kind": "photo"
+  "file": "logos/bryant.svg",
+  "source": "https://www.bryant.com/en/us/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
  },
  "Samsung": {
   "file": "logos/samsung.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Samsung_wordmark.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "Whirlpool": {
   "file": "logos/whirlpool.png",
   "commons": "https://commons.wikimedia.org/wiki/File:Whirlpool_logo.svg",
   "license": "Public domain",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
  },
  "American Standard": {
   "file": "logos/american-standard.png",
   "commons": "https://citysuburbanheating.com/wp-content/uploads/2025/06/American-Standard-logo.png",
   "license": "City & Suburban site",
-  "kind": "logo"
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Navien": {
+  "file": "logos/navien.png",
+  "source": "https://www.navieninc.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Bradford White": {
+  "file": "logos/bradford-white.png",
+  "source": "https://www.bradfordwhite.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "MrCool": {
+  "file": "logos/mrcool.svg",
+  "source": "https://www.mrcool.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Aprilaire": {
+  "file": "logos/aprilaire.svg",
+  "source": "https://www.aprilaire.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "York": {
+  "file": "logos/york.png",
+  "source": "https://www.york.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Ruud": {
+  "file": "logos/ruud.png",
+  "source": "https://www.ruud.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Payne": {
+  "file": "logos/payne.png",
+  "source": "https://www.payne.com/ (Carrier image server; Payne is now WeatherMaker)",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Weil-McLain": {
+  "file": "logos/weil-mclain.svg",
+  "source": "https://www.weil-mclain.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "Pioneer": {
+  "file": "logos/pioneer.png",
+  "source": "https://www.pioneerminisplit.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Heil": {
+  "file": "logos/heil.png",
+  "source": "https://www.heil-hvac.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Lochinvar": {
+  "file": "logos/lochinvar.svg",
+  "source": "https://www.lochinvar.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "Coleman": {
+  "file": "logos/coleman.png",
+  "source": "https://www.colemanac.com/ (Bosch Home Comfort media server)",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Takagi": {
+  "file": "logos/takagi.png",
+  "source": "https://www.takagi.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "Comfortmaker": {
+  "file": "logos/comfortmaker.png",
+  "source": "https://www.comfortmaker.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Burnham": {
+  "file": "logos/burnham.png",
+  "source": "https://www.burnhamholdings.com/ (maker of Burnham boilers)",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "State": {
+  "file": "logos/state.svg",
+  "source": "https://www.statewaterheaters.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Peerless": {
+  "file": "logos/peerless.png",
+  "source": "https://www.peerlessboilers.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Armstrong": {
+  "file": "logos/armstrong.png",
+  "source": "https://www.alliedair.com/ (Armstrong Air maker)",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Utica": {
+  "file": "logos/utica.svg",
+  "source": "https://www.uticaboilers.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Tempstar": {
+  "file": "logos/tempstar.png",
+  "source": "https://www.tempstar.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Ducane": {
+  "file": "logos/ducane.png",
+  "source": "https://www.alliedair.com/ (Ducane HVAC maker)",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "EcoSmart": {
+  "file": "logos/ecosmart.png",
+  "source": "https://www.ecosmartus.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Luxaire": {
+  "file": "logos/luxaire.png",
+  "source": "https://www.luxaire.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
+ },
+ "Slant/Fin": {
+  "file": "logos/slant-fin.png",
+  "source": "https://www.slantfin.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "light"
+ },
+ "Triangle Tube": {
+  "file": "logos/triangle-tube.svg",
+  "source": "https://www.triangletube.com/",
+  "license": "brand's own logo, from its website",
+  "kind": "logo",
+  "tile": "dark"
  }
 }

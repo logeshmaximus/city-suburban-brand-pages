@@ -165,6 +165,7 @@ for b in brands.values():
     lg = logos.get(b['name'])
     b['brandImage'] = ('file:' + lg['file']) if lg else None
     b['brandImageKind'] = lg['kind'] if lg else None
+    b['brandTile'] = (lg or {}).get('tile', 'light')  # 'dark' for logos the brand publishes in white
 
 out = sys.argv[1]
 json.dump(list(brands.values()), open(os.path.join(out, 'brands.json'), 'w', encoding='utf-8'), indent=1)
