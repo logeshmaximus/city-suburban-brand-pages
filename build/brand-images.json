@@ -1,0 +1,146 @@
+{
+ "AO Smith": {
+  "file": "logos/ao-smith.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:AO_Smith_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Amana": {
+  "file": "logos/amana.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Amana_Corporation_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Bosch": {
+  "file": "logos/bosch.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Bosch-logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Buderus": {
+  "file": "logos/buderus.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Buderus-logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Daikin": {
+  "file": "logos/daikin.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:DAIKIN_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Ecobee": {
+  "file": "logos/ecobee.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Ecobee_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Fujitsu": {
+  "file": "logos/fujitsu.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Fujitsu-Logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Gree": {
+  "file": "logos/gree.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:GREE_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Goodman": {
+  "file": "logos/goodman.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Goodman_Global_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Nest": {
+  "file": "logos/nest.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Google_Nest_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Honeywell": {
+  "file": "logos/honeywell.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Honeywell_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "LG": {
+  "file": "logos/lg.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:LG_logo_(2014).svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Lennox": {
+  "file": "logos/lennox.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Lennox_International_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Mitsubishi": {
+  "file": "logos/mitsubishi.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Logo_Mitsubishi_Electric_(MR_SLIM).png",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Carrier": {
+  "file": "logos/carrier.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Carrier_Corporation.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Noritz": {
+  "file": "logos/noritz.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:NORITZ_logo.png",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Rheem": {
+  "file": "logos/rheem.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Rheem_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Rinnai": {
+  "file": "logos/rinnai.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Rinnai_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Trane": {
+  "file": "logos/trane.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:TraneTechnologieslogo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Viessmann": {
+  "file": "logos/viessmann.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Viessman_logo_and_claim.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Bryant": {
+  "file": "logos/bryant.jpg",
+  "commons": "https://commons.wikimedia.org/wiki/File:Bryant_Heating-Cooling_Sign,_Over-the-Rhine,_Cincinnati,_OH_(47352375341).jpg",
+  "license": "CC0",
+  "kind": "photo"
+ },
+ "Samsung": {
+  "file": "logos/samsung.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Samsung_wordmark.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "Whirlpool": {
+  "file": "logos/whirlpool.png",
+  "commons": "https://commons.wikimedia.org/wiki/File:Whirlpool_logo.svg",
+  "license": "Public domain",
+  "kind": "logo"
+ },
+ "American Standard": {
+  "file": "logos/american-standard.png",
+  "commons": "https://citysuburbanheating.com/wp-content/uploads/2025/06/American-Standard-logo.png",
+  "license": "City & Suburban site",
+  "kind": "logo"
+ }
+}

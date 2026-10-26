@@ -119,6 +119,10 @@ BRAND_PHOTOS = {
     ('American Standard', 'Heat Pump'): '/services/reference-assets/as-heat-pump.png',
     ('Nest', 'Thermostat'): 'https://cdn.sanity.io/images/boolyxr0/production/801b31702589e333ca1833732c9ffd327d7ee3a8-1920x1954.jpg',
 }
+# City & Suburban's own technician photos (photo side of the site's blog banners, no brand on the unit)
+CS_PHOTO = {'Tankless Water Heater': 'water-heater', 'Water Heater': 'water-heater', 'Air Conditioner': 'air-conditioner',
+            'Mini Split': 'mini-split', 'Heat Pump': 'heat-pump', 'Furnace': 'furnace', 'Boiler': 'boiler',
+            'Thermostat': 'hvac', 'Humidifier': 'hvac'}
 SERVICES = {'r': 'repair', 'i': 'installation', 's': 'service', 'm': 'maintenance', 'x': 'replacement'}
 
 # Brand page drafts in Sanity (boolyxr0, type brandPage), none published yet: title → page slug
@@ -151,11 +155,16 @@ for line in ROWS.splitlines():
     b['pages'].append({
         'title': title,
         'equipment': eq[1],
-        'image': BRAND_PHOTOS.get((brand, eq[0])),
+        'image': BRAND_PHOTOS.get((brand, eq[0])) or 'file:crops/cs-' + CS_PHOTO[eq[0]] + '.jpg',
         'description': f"{brand} {eq[1]} {join([SERVICES[c] for c in codes])} in Chicago.",
     })
+# Brand images: logos.json (public-domain / CC0 logos from Wikimedia Commons, American Standard from the
+# City & Suburban site, a CC0 photo of a Bryant sign). Brands without one get a wordmark tile.
+logos = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'logos', 'logos.json'), encoding='utf-8')) if len(sys.argv) < 3 else json.load(open(sys.argv[2], encoding='utf-8'))
 for b in brands.values():
-    b['image'] = next((p['image'] for p in b['pages'] if p['image']), None)  # the brand's highest-volume page with a photo
+    lg = logos.get(b['name'])
+    b['brandImage'] = ('file:' + lg['file']) if lg else None
+    b['brandImageKind'] = lg['kind'] if lg else None
 
 out = sys.argv[1]
 json.dump(list(brands.values()), open(os.path.join(out, 'brands.json'), 'w', encoding='utf-8'), indent=1)

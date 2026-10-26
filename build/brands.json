@@ -6,31 +6,31 @@
    {
     "title": "Rheem Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Rheem water heater repair, installation, service, maintenance and replacement in Chicago."
    },
    {
     "title": "Rheem Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Rheem tankless water heater repair, maintenance, installation and service in Chicago."
    },
    {
     "title": "Rheem Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Rheem air conditioner repair, maintenance, installation and service in Chicago."
    },
    {
     "title": "Rheem Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Rheem furnace repair, service, installation and maintenance in Chicago."
    },
    {
     "title": "Rheem Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Rheem heat pump repair, installation and service in Chicago."
    }
   ],
@@ -41,7 +41,8 @@
    "furnaces",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/rheem.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Carrier",
@@ -50,25 +51,25 @@
    {
     "title": "Carrier Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Carrier air conditioner repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "Carrier Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Carrier furnace repair, replacement, service, installation and maintenance in Chicago."
    },
    {
     "title": "Carrier Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Carrier heat pump repair, maintenance, installation and service in Chicago."
    },
    {
     "title": "Carrier Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Carrier mini-split installation and maintenance in Chicago."
    }
   ],
@@ -78,7 +79,8 @@
    "heat pumps",
    "mini-splits"
   ],
-  "image": null
+  "brandImage": "file:logos/carrier.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Nest",
@@ -94,7 +96,8 @@
   "equipmentPlural": [
    "thermostats"
   ],
-  "image": "https://cdn.sanity.io/images/boolyxr0/production/801b31702589e333ca1833732c9ffd327d7ee3a8-1920x1954.jpg"
+  "brandImage": "file:logos/nest.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Navien",
@@ -103,13 +106,13 @@
    {
     "title": "Navien Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Navien tankless water heater maintenance, repair, installation and service in Chicago."
    },
    {
     "title": "Navien Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Navien boiler installation, service, repair and maintenance in Chicago."
    }
   ],
@@ -117,7 +120,8 @@
    "tankless water heaters",
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Bradford White",
@@ -126,14 +130,15 @@
    {
     "title": "Bradford White Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Bradford White water heater repair, installation, service, maintenance and replacement in Chicago."
    }
   ],
   "equipmentPlural": [
    "water heaters"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Lennox",
@@ -142,25 +147,25 @@
    {
     "title": "Lennox Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Lennox furnace repair, service, maintenance, installation and replacement in Chicago."
    },
    {
     "title": "Lennox Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Lennox air conditioner repair, maintenance, service, installation and replacement in Chicago."
    },
    {
     "title": "Lennox Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Lennox heat pump repair, service, installation and maintenance in Chicago."
    },
    {
     "title": "Lennox Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Lennox mini-split repair in Chicago."
    }
   ],
@@ -170,7 +175,8 @@
    "heat pumps",
    "mini-splits"
   ],
-  "image": null
+  "brandImage": "file:logos/lennox.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Trane",
@@ -179,19 +185,19 @@
    {
     "title": "Trane Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Trane air conditioner repair, service, installation and maintenance in Chicago."
    },
    {
     "title": "Trane Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Trane furnace installation, repair, maintenance, service and replacement in Chicago."
    },
    {
     "title": "Trane Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Trane heat pump repair, installation, service and maintenance in Chicago."
    }
   ],
@@ -200,7 +206,8 @@
    "furnaces",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/trane.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Rinnai",
@@ -209,13 +216,13 @@
    {
     "title": "Rinnai Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Rinnai tankless water heater installation, repair, service and maintenance in Chicago."
    },
    {
     "title": "Rinnai Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Rinnai boiler installation in Chicago."
    }
   ],
@@ -223,7 +230,8 @@
    "tankless water heaters",
    "boilers"
   ],
-  "image": null
+  "brandImage": "file:logos/rinnai.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Goodman",
@@ -232,19 +240,19 @@
    {
     "title": "Goodman Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Goodman furnace installation, repair, service, maintenance and replacement in Chicago."
    },
    {
     "title": "Goodman Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Goodman air conditioner repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "Goodman Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Goodman heat pump repair, installation and service in Chicago."
    }
   ],
@@ -253,7 +261,8 @@
    "air conditioners",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/goodman.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Mitsubishi",
@@ -262,19 +271,19 @@
    {
     "title": "Mitsubishi Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Mitsubishi mini-split installation, maintenance, repair and service in Chicago."
    },
    {
     "title": "Mitsubishi Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Mitsubishi air conditioner repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "Mitsubishi Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Mitsubishi heat pump installation, service, maintenance and repair in Chicago."
    }
   ],
@@ -283,7 +292,8 @@
    "air conditioners",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/mitsubishi.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Bryant",
@@ -292,19 +302,19 @@
    {
     "title": "Bryant Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Bryant furnace repair, installation, maintenance and service in Chicago."
    },
    {
     "title": "Bryant Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Bryant heat pump installation and repair in Chicago."
    },
    {
     "title": "Bryant Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Bryant air conditioner repair, installation and service in Chicago."
    }
   ],
@@ -313,7 +323,8 @@
    "heat pumps",
    "air conditioners"
   ],
-  "image": null
+  "brandImage": "file:logos/bryant.jpg",
+  "brandImageKind": "photo"
  },
  {
   "name": "MrCool",
@@ -322,14 +333,15 @@
    {
     "title": "MrCool Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "MrCool mini-split installation, repair and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "mini-splits"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Daikin",
@@ -338,25 +350,25 @@
    {
     "title": "Daikin Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Daikin mini-split installation, repair, maintenance and service in Chicago."
    },
    {
     "title": "Daikin Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Daikin air conditioner repair, service, installation and maintenance in Chicago."
    },
    {
     "title": "Daikin Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Daikin heat pump installation, repair, maintenance and service in Chicago."
    },
    {
     "title": "Daikin Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Daikin furnace repair in Chicago."
    }
   ],
@@ -366,7 +378,8 @@
    "heat pumps",
    "furnaces"
   ],
-  "image": null
+  "brandImage": "file:logos/daikin.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Aprilaire",
@@ -375,14 +388,15 @@
    {
     "title": "Aprilaire Humidifier Repair & Installation",
     "equipment": "humidifier",
-    "image": null,
+    "image": "file:crops/cs-hvac.jpg",
     "description": "Aprilaire humidifier installation, service and repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "humidifiers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "AO Smith",
@@ -391,14 +405,15 @@
    {
     "title": "AO Smith Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "AO Smith water heater installation, repair, maintenance, service and replacement in Chicago."
    }
   ],
   "equipmentPlural": [
    "water heaters"
   ],
-  "image": null
+  "brandImage": "file:logos/ao-smith.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Amana",
@@ -407,19 +422,19 @@
    {
     "title": "Amana Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Amana furnace repair, service, installation and maintenance in Chicago."
    },
    {
     "title": "Amana Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Amana air conditioner repair, service and maintenance in Chicago."
    },
    {
     "title": "Amana Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Amana heat pump repair in Chicago."
    }
   ],
@@ -428,7 +443,8 @@
    "air conditioners",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/amana.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Bosch",
@@ -437,25 +453,25 @@
    {
     "title": "Bosch Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Bosch tankless water heater repair, service, maintenance and installation in Chicago."
    },
    {
     "title": "Bosch Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Bosch heat pump installation, repair, service and maintenance in Chicago."
    },
    {
     "title": "Bosch Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Bosch boiler repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "Bosch Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Bosch water heater repair and service in Chicago."
    }
   ],
@@ -465,7 +481,8 @@
    "boilers",
    "water heaters"
   ],
-  "image": null
+  "brandImage": "file:logos/bosch.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "LG",
@@ -474,13 +491,13 @@
    {
     "title": "LG Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "LG air conditioner repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "LG Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "LG mini-split installation and repair in Chicago."
    }
   ],
@@ -488,7 +505,8 @@
    "air conditioners",
    "mini-splits"
   ],
-  "image": null
+  "brandImage": "file:logos/lg.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Honeywell",
@@ -497,13 +515,13 @@
    {
     "title": "Honeywell Thermostat Repair & Installation",
     "equipment": "thermostat",
-    "image": null,
+    "image": "file:crops/cs-hvac.jpg",
     "description": "Honeywell thermostat installation and repair in Chicago."
    },
    {
     "title": "Honeywell Humidifier Repair & Installation",
     "equipment": "humidifier",
-    "image": null,
+    "image": "file:crops/cs-hvac.jpg",
     "description": "Honeywell humidifier installation and repair in Chicago."
    }
   ],
@@ -511,7 +529,8 @@
    "thermostats",
    "humidifiers"
   ],
-  "image": null
+  "brandImage": "file:logos/honeywell.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "York",
@@ -520,19 +539,19 @@
    {
     "title": "York Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "York furnace repair, installation, service and maintenance in Chicago."
    },
    {
     "title": "York Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "York air conditioner repair, service and maintenance in Chicago."
    },
    {
     "title": "York Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "York heat pump repair and installation in Chicago."
    }
   ],
@@ -541,7 +560,8 @@
    "air conditioners",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Ruud",
@@ -550,19 +570,19 @@
    {
     "title": "Ruud Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Ruud air conditioner repair and maintenance in Chicago."
    },
    {
     "title": "Ruud Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Ruud furnace repair, installation and maintenance in Chicago."
    },
    {
     "title": "Ruud Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Ruud water heater repair and installation in Chicago."
    }
   ],
@@ -571,7 +591,8 @@
    "furnaces",
    "water heaters"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "American Standard",
@@ -601,7 +622,8 @@
    "furnaces",
    "heat pumps"
   ],
-  "image": "/services/reference-assets/as-ac.png"
+  "brandImage": "file:logos/american-standard.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Fujitsu",
@@ -610,13 +632,13 @@
    {
     "title": "Fujitsu Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Fujitsu mini-split repair, installation, maintenance and service in Chicago."
    },
    {
     "title": "Fujitsu Heat Pump Repair & Installation",
     "equipment": "heat pump",
-    "image": null,
+    "image": "file:crops/cs-heat-pump.jpg",
     "description": "Fujitsu heat pump repair, installation, service and maintenance in Chicago."
    }
   ],
@@ -624,7 +646,8 @@
    "mini-splits",
    "heat pumps"
   ],
-  "image": null
+  "brandImage": "file:logos/fujitsu.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Noritz",
@@ -633,14 +656,15 @@
    {
     "title": "Noritz Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Noritz tankless water heater repair, installation, maintenance and service in Chicago."
    }
   ],
   "equipmentPlural": [
    "tankless water heaters"
   ],
-  "image": null
+  "brandImage": "file:logos/noritz.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Ecobee",
@@ -649,14 +673,15 @@
    {
     "title": "Ecobee Thermostat Repair & Installation",
     "equipment": "thermostat",
-    "image": null,
+    "image": "file:crops/cs-hvac.jpg",
     "description": "Ecobee thermostat installation and repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "thermostats"
   ],
-  "image": null
+  "brandImage": "file:logos/ecobee.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Payne",
@@ -665,13 +690,13 @@
    {
     "title": "Payne Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Payne furnace repair, service and maintenance in Chicago."
    },
    {
     "title": "Payne Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Payne air conditioner repair in Chicago."
    }
   ],
@@ -679,7 +704,8 @@
    "furnaces",
    "air conditioners"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Weil-McLain",
@@ -688,14 +714,15 @@
    {
     "title": "Weil-McLain Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Weil-McLain boiler maintenance, repair, service and installation in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Pioneer",
@@ -704,14 +731,15 @@
    {
     "title": "Pioneer Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Pioneer mini-split installation, repair and service in Chicago."
    }
   ],
   "equipmentPlural": [
    "mini-splits"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Heil",
@@ -720,13 +748,13 @@
    {
     "title": "Heil Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Heil furnace repair, maintenance and installation in Chicago."
    },
    {
     "title": "Heil Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Heil air conditioner repair in Chicago."
    }
   ],
@@ -734,7 +762,8 @@
    "furnaces",
    "air conditioners"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Lochinvar",
@@ -743,14 +772,15 @@
    {
     "title": "Lochinvar Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Lochinvar boiler repair, service and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Gree",
@@ -759,14 +789,15 @@
    {
     "title": "Gree Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Gree mini-split repair, maintenance and installation in Chicago."
    }
   ],
   "equipmentPlural": [
    "mini-splits"
   ],
-  "image": null
+  "brandImage": "file:logos/gree.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Coleman",
@@ -775,13 +806,13 @@
    {
     "title": "Coleman Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Coleman furnace repair, installation and replacement in Chicago."
    },
    {
     "title": "Coleman Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Coleman air conditioner repair in Chicago."
    }
   ],
@@ -789,7 +820,8 @@
    "furnaces",
    "air conditioners"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Takagi",
@@ -798,14 +830,15 @@
    {
     "title": "Takagi Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Takagi tankless water heater repair and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "tankless water heaters"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Viessmann",
@@ -814,14 +847,15 @@
    {
     "title": "Viessmann Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Viessmann boiler repair, installation, service and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": "file:logos/viessmann.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Comfortmaker",
@@ -830,14 +864,15 @@
    {
     "title": "Comfortmaker Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Comfortmaker furnace repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "furnaces"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Burnham",
@@ -846,14 +881,15 @@
    {
     "title": "Burnham Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Burnham boiler repair and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Buderus",
@@ -862,14 +898,15 @@
    {
     "title": "Buderus Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Buderus boiler repair, service and maintenance in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": "file:logos/buderus.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Whirlpool",
@@ -878,14 +915,15 @@
    {
     "title": "Whirlpool Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "Whirlpool water heater repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "water heaters"
   ],
-  "image": null
+  "brandImage": "file:logos/whirlpool.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "State",
@@ -894,14 +932,15 @@
    {
     "title": "State Water Heater Repair & Installation",
     "equipment": "water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "State water heater repair and service in Chicago."
    }
   ],
   "equipmentPlural": [
    "water heaters"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Samsung",
@@ -910,14 +949,15 @@
    {
     "title": "Samsung Mini Split Repair & Installation",
     "equipment": "mini-split",
-    "image": null,
+    "image": "file:crops/cs-mini-split.jpg",
     "description": "Samsung mini-split repair and installation in Chicago."
    }
   ],
   "equipmentPlural": [
    "mini-splits"
   ],
-  "image": null
+  "brandImage": "file:logos/samsung.png",
+  "brandImageKind": "logo"
  },
  {
   "name": "Peerless",
@@ -926,14 +966,15 @@
    {
     "title": "Peerless Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Peerless boiler repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Armstrong",
@@ -942,13 +983,13 @@
    {
     "title": "Armstrong Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Armstrong furnace repair in Chicago."
    },
    {
     "title": "Armstrong Air Conditioner Repair & Installation",
     "equipment": "air conditioner",
-    "image": null,
+    "image": "file:crops/cs-air-conditioner.jpg",
     "description": "Armstrong air conditioner repair in Chicago."
    }
   ],
@@ -956,7 +997,8 @@
    "furnaces",
    "air conditioners"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Utica",
@@ -965,14 +1007,15 @@
    {
     "title": "Utica Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Utica boiler repair and installation in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Tempstar",
@@ -981,14 +1024,15 @@
    {
     "title": "Tempstar Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Tempstar furnace repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "furnaces"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Ducane",
@@ -997,14 +1041,15 @@
    {
     "title": "Ducane Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Ducane furnace repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "furnaces"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "EcoSmart",
@@ -1013,14 +1058,15 @@
    {
     "title": "EcoSmart Tankless Water Heater Repair & Installation",
     "equipment": "tankless water heater",
-    "image": null,
+    "image": "file:crops/cs-water-heater.jpg",
     "description": "EcoSmart tankless water heater repair and installation in Chicago."
    }
   ],
   "equipmentPlural": [
    "tankless water heaters"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Luxaire",
@@ -1029,14 +1075,15 @@
    {
     "title": "Luxaire Furnace Repair & Installation",
     "equipment": "furnace",
-    "image": null,
+    "image": "file:crops/cs-furnace.jpg",
     "description": "Luxaire furnace repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "furnaces"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Slant/Fin",
@@ -1045,14 +1092,15 @@
    {
     "title": "Slant/Fin Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Slant/Fin boiler replacement in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  },
  {
   "name": "Triangle Tube",
@@ -1061,13 +1109,14 @@
    {
     "title": "Triangle Tube Boiler Repair & Installation",
     "equipment": "boiler",
-    "image": null,
+    "image": "file:crops/cs-boiler.jpg",
     "description": "Triangle Tube boiler repair in Chicago."
    }
   ],
   "equipmentPlural": [
    "boilers"
   ],
-  "image": null
+  "brandImage": null,
+  "brandImageKind": null
  }
 ]

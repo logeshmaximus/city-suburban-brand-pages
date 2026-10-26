@@ -7,7 +7,7 @@ heating.html = https://citysuburbanheating.com/services/heating/ (service cards,
 The live header, hero layout, trust band and footer are kept as they are; only the cards and the
 page-specific copy change. Assets (CSS, fonts, images) are downloaded next to the pages.
 """
-import html, json, os, re, subprocess, sys, urllib.parse
+import html, json, os, re, shutil, subprocess, sys, urllib.parse
 
 SRC, BRANDS, DRAFTS, OUT = sys.argv[1:5]
 LIVE = 'https://citysuburbanheating.com'
@@ -20,7 +20,15 @@ def fetch(url, dest):
     subprocess.run(['curl', '-sfL', '-o', dest, url], check=True)
 
 def local_asset(path):
-    """/services/... asset → assets/<file>, downloaded once. Returns the path relative to the site root."""
+    """/services/... asset → assets/<file>, downloaded once; file:<path> = a local file, copied.
+    Returns the path relative to the site root."""
+    if path.startswith('file:'):
+        src = path[5:]
+        name = ('brand-' if 'logos' in src.replace('\\', '/').split('/') else '') + os.path.basename(src)
+        dest = os.path.join(OUT, 'assets', name)
+        if not os.path.exists(dest):
+            shutil.copyfile(src, dest)
+        return 'assets/' + name
     clean = path.split('?')[0]
     name = re.sub(r'[^A-Za-z0-9._-]', '_', clean.strip('/').replace('services/', '', 1))
     fetch(LIVE + clean if clean.startswith('/') else clean, os.path.join(OUT, 'assets', name))
@@ -85,7 +93,25 @@ SEARCH_JS = """<script>
 })();
 </script>"""
 
+BRAND_CSS = '''<style>
+/* Brand images on the live card design: logos on white, a wordmark tile where no free logo exists */
+.cluster-card-media.brand-media{background:#fff}
+.cluster-card-media.brand-media:after{background:linear-gradient(#0000 72%,#09263a12)}
+.cluster-card-media.brand-media img{object-fit:contain;padding:15% 14%}
+.brand-wordmark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 10%;text-align:center;color:var(--collection-charcoal);font-family:var(--font-space-grotesk),sans-serif;font-weight:700;letter-spacing:-.04em;font-size:clamp(28px,3.2vw,42px);line-height:1}
+.brand-wordmark:after{content:"";position:absolute;left:50%;bottom:22%;width:48px;height:3px;margin-left:-24px;background:var(--collection-lime)}
+.brand-panel-logo{position:absolute;z-index:1;right:28px;top:24px;background:#fff;border-radius:10px;padding:10px 14px;box-shadow:0 10px 26px #0000002e;max-width:42%}
+.brand-panel-logo img{display:block;max-width:100%;max-height:44px;margin:auto}
+.collection-level-stat:has(.brand-panel-logo):before{display:none}
+.collection-level-stat:has(.brand-panel-logo)>span{max-width:calc(58% - 28px)}
+/* City & Suburban photos are portrait: keep the technician's head in the wide card */
+.collection-card-media{background-position:center 22%!important}
+/* the brand count has two digits (the live panel has one): keep "brands" clear of the house icon on narrower laptops */
+@media (min-width:821px) and (max-width:1180px){.collection-hero-panel-count strong{font-size:50px}}
+</style>'''
+
 def finish(page, depth, extra_js=''):
+    page = page.replace('</head>', BRAND_CSS + '</head>', 1)
     page = strip_and_localise(page, depth)
     return page.replace('</body>', NAV_JS + extra_js + '</body>')
 
@@ -99,7 +125,7 @@ def set_meta(page, title, description):
 brands = json.load(open(BRANDS, encoding='utf-8'))
 drafts = json.load(open(DRAFTS, encoding='utf-8'))
 for b in brands:
-    b['image'] = b['image'] and local_asset(b['image'])
+    b['brandImage'] = b['brandImage'] and local_asset(b['brandImage'])
     for p in b['pages']:
         p['image'] = p['image'] and local_asset(p['image'])
 
@@ -114,8 +140,9 @@ for b in brands:
     equip = [e[0].upper() + e[1:] if i == 0 else e for i, e in enumerate(b['equipmentPlural'])]
     cards.append(
         f'<a aria-label="View all {esc(b["name"])} services" class="cluster-card" data-system="{b["slug"]}" href="{b["slug"]}/">' +
-        (f'<span class="cluster-card-media"><img alt="{esc(b["name"])} services" decoding="async" loading="lazy" src="{b["image"]}"/>' if b['image'] else
-         '<span class="cluster-card-media cluster-card-media-empty"><span class="cluster-card-placeholder" aria-hidden="true">CS</span>') +
+        (f'<span class="cluster-card-media brand-media"><img alt="{esc(b["name"])} logo" decoding="async" loading="lazy" src="{b["brandImage"]}"/>' if b['brandImageKind'] == 'logo' else
+         f'<span class="cluster-card-media"><img alt="{esc(b["name"])}" decoding="async" loading="lazy" src="{b["brandImage"]}"/>' if b['brandImageKind'] == 'photo' else
+         f'<span class="cluster-card-media brand-media"><span class="brand-wordmark" aria-hidden="true">{esc(b["name"])}</span>') +
         f'<span class="cluster-card-count">{n} {"service" if n == 1 else "services"}</span></span>'
         f'<span class="cluster-card-content"><strong class="cluster-card-title">{esc(b["name"])}</strong>'
         f'<span class="cluster-card-description-text">{esc(plural_list(equip))}.</span>'
@@ -128,8 +155,7 @@ hub = hub.replace('<p>Explore dependable heating, cooling, indoor-air-quality, a
 hub = hub.replace('>Explore service categories<', '>Explore brands<')
 hub = re.sub(r'aria-label="4 HVAC service categories"', f'aria-label="{len(brands)} HVAC brands"', hub)
 hub = hub.replace('<span class="collection-hero-panel-kicker">Whole-home comfort</span>', '<span class="collection-hero-panel-kicker">Brands we service</span>')
-hub = re.sub(r'(<div class="collection-hero-panel-count"><strong>)4(</strong><span>)service<br/>systems', rf'\g<1>{len(brands)}\g<2>HVAC<br/>brands', hub)
-hub = hub.replace('<p>Heating · Cooling · Air quality</p>', '<p>Furnaces · AC · Water heaters</p>')
+hub = re.sub(r'(<div class="collection-hero-panel-count"><strong>)4(</strong><span>)service<br/>systems', rf'\g<1>{len(brands)}\g<2>brands', hub)
 hub = hub.replace('<p class="cluster-directory-eyebrow">Find your system</p>', '<p class="cluster-directory-eyebrow">Find your brand</p>')
 hub = hub.replace('>Explore by system</h2>', '>Explore by brand</h2>')
 hub = hub.replace('<p>Choose a service category to see the help available for your home or business.</p>',
@@ -151,9 +177,10 @@ for b in brands:
     page = page.replace('<p>Heating repair, installation, maintenance, heat pumps, boilers and system plans for Chicago homes.</p>',
                         f'<p>{name} {esc(equip)}: repair, installation and maintenance for Chicago homes.</p>')
     page = page.replace('>Browse services<', f'>Browse {name} services<')
-    panel_bg = f',url(&quot;../{b["image"]}&quot;)' if b['image'] else ''
+    panel_bg = f',url(&quot;../{b["brandImage"]}&quot;)' if b['brandImageKind'] == 'photo' else ''
+    panel_logo = (f'<div class="brand-panel-logo"><img alt="{name} logo" src="../{b["brandImage"]}"/></div>' if b['brandImageKind'] == 'logo' else '')
     page = re.sub(r'<div class="collection-level-stat collection-level-stat-image" data-panel-image="[^"]*" style="background-image:(linear-gradient\(.*?\)),url\(&quot;[^&]*&quot;\)"><span>Heating</span><strong>18</strong><h2>Services<!-- --> in this category</h2>',
-                  lambda m: f'<div class="collection-level-stat collection-level-stat-image" style="background-image:{m.group(1)}{panel_bg}"><span>{name}</span><strong>{n}</strong><h2>{"Service" if n == 1 else "Services"} for this brand</h2>', page, flags=re.S)
+                  lambda m: f'<div class="collection-level-stat collection-level-stat-image" style="background-image:{m.group(1)}{panel_bg}"><span>{name}</span><strong>{n}</strong><h2>{"Service" if n == 1 else "Services"} for this brand</h2>{panel_logo}', page, flags=re.S)
     page = page.replace('<p class="collection-kicker">Heating directory</p>', f'<p class="collection-kicker">{name} directory</p>')
     page = page.replace('<h2 id="service-directory-title">Choose a heating service</h2>', f'<h2 id="service-directory-title">Choose a {name} service</h2>')
     page = page.replace('<p>Pick the service that matches what the equipment is doing:',
