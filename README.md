@@ -7,7 +7,7 @@ Static preview on GitHub Pages: https://logeshmaximus.github.io/city-suburban-br
 
 Brands and pages come from the "Brand Pages" tab of the CitySubUrban | Internal sheet: the brand is the start of each page title, before the equipment. 49 brands, 90 pages.
 
-No brand page is published yet, so brand page cards show their status ("Page written, publishing soon." for the 10 Sanity drafts, otherwise "Page coming soon.") instead of a link. Pages carry noindex (preview only).
+Brand page cards take their status from Sanity: a page whose live URL loads becomes a link; otherwise "Published, goes live with the brand pages release.", "Page written, publishing soon." (draft) or "Page coming soon.". Pages carry noindex (preview only).
 
 ## Images
 
@@ -20,4 +20,5 @@ No brand page is published yet, so brand page cards show their status ("Page wri
 ## Rebuild
 
     python -I build/make_brands.py build
-    python -I build/build_brand_site.py build build/brands.json build/drafts.json <out dir>
+    node --env-file=<service-page .env.local> build/brand_status.mjs build/drafts.json build/status.json   (page status from Sanity)
+    python -I build/build_brand_site.py build build/brands.json build/status.json <out dir>

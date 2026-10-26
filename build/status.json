@@ -1,0 +1,62 @@
+{
+ "American Standard Furnace Repair & Installation": {
+  "slug": "american-standard-furnace-repair-chicago",
+  "path": "/services/american-standard/american-standard-furnace-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Bradford White Water Heater Repair & Installation": {
+  "slug": "bradford-white-water-heater-repair-chicago",
+  "path": "/services/bradford-white/bradford-white-water-heater-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Carrier Air Conditioner Repair & Installation": {
+  "slug": "carrier-air-conditioner-repair-chicago",
+  "path": "/services/carrier/carrier-air-conditioner-repair-chicago/",
+  "status": "published",
+  "live": false
+ },
+ "Lennox Furnace Repair & Installation": {
+  "slug": "lennox-furnace-repair-chicago",
+  "path": "/services/lennox/lennox-furnace-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Navien Tankless Water Heater Repair & Installation": {
+  "slug": "navien-tankless-water-heater-repair-chicago",
+  "path": "/services/navien/navien-tankless-water-heater-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Nest Thermostat Repair & Installation": {
+  "slug": "nest-thermostat-installation-chicago",
+  "path": "/services/nest/nest-thermostat-installation-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Rheem Tankless Water Heater Repair & Installation": {
+  "slug": "rheem-tankless-water-heater-repair-chicago",
+  "path": "/services/rheem/rheem-tankless-water-heater-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Rheem Water Heater Repair & Installation": {
+  "slug": "rheem-water-heater-repair-chicago",
+  "path": "/services/rheem/rheem-water-heater-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Trane Air Conditioner Repair & Installation": {
+  "slug": "trane-air-conditioner-repair-chicago",
+  "path": "/services/trane/trane-air-conditioner-repair-chicago/",
+  "status": "draft",
+  "live": false
+ },
+ "Trane Furnace Repair & Installation": {
+  "slug": "trane-furnace-installation-chicago",
+  "path": "/services/trane/trane-furnace-installation-chicago/",
+  "status": "draft",
+  "live": false
+ }
+}

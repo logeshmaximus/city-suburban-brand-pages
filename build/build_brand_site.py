@@ -195,12 +195,16 @@ for b in brands:
     page = re.sub(r'Showing <strong>18</strong> of <!-- -->18<!-- --> services', f'Showing <strong>{n}</strong> of {n} {"service" if n == 1 else "services"}', page)
     cs = []
     for p in b['pages']:
-        # No brand page is published yet: the card shows its status instead of a link (a link would 404).
-        # Once a page is live, give the card href="https://citysuburbanheating.com/services/<brand>/<page slug>/".
-        d = drafts.get(p['title'])
-        note = ('Page written, publishing soon.' if d else 'Page coming soon.')
-        note = f'<span class="collection-card-description" style="font-style:italic;opacity:.75">{note}</span>'
-        future = f' data-live-path="/services/{b["slug"]}/{d}/"' if d else ''
+        # Status from Sanity (status.json, tools/brand_status.mjs). A card links only when its live page
+        # loads; until then it shows where the page stands instead of a link that would 404.
+        st = drafts.get(p['title']) or {'status': 'none'}
+        if st.get('live'):
+            note, future = '', f' href="{LIVE}{st["path"]}"'
+        else:
+            note = {'published': 'Published, goes live with the brand pages release.',
+                    'draft': 'Page written, publishing soon.'}.get(st['status'], 'Page coming soon.')
+            note = f'<span class="collection-card-description" style="font-style:italic;opacity:.75">{note}</span>'
+            future = f' data-live-path="{st["path"]}"' if st.get('path') else ''
         cs.append(
             (f'<a class="collection-card"{future} data-card-image="../{p["image"]}">'
              f'<span class="collection-card-media" style="background-image:linear-gradient(180deg, rgba(9,38,58,0) 45%, rgba(9,38,58,.14)), url(&quot;../{p["image"]}&quot;)" role="img" aria-label="{esc(p["title"])} in Chicago"></span>'
