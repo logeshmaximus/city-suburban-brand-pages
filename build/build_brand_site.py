@@ -130,6 +130,9 @@ def set_meta(page, title, description):
 
 brands = json.load(open(BRANDS, encoding='utf-8'))
 drafts = json.load(open(DRAFTS, encoding='utf-8'))
+# Links the user gave for a card (card_links.json next to the status file), used before the Sanity status
+_links_file = os.path.join(os.path.dirname(os.path.abspath(DRAFTS)), 'card_links.json')
+CARD_LINKS = {k: v for k, v in json.load(open(_links_file, encoding='utf-8')).items() if not k.startswith('_')} if os.path.exists(_links_file) else {}
 for b in brands:
     b['brandImage'] = b['brandImage'] and local_asset(b['brandImage'])
     for p in b['pages']:
@@ -198,7 +201,9 @@ for b in brands:
         # Status from Sanity (status.json, tools/brand_status.mjs). A card links only when its live page
         # loads; until then it shows where the page stands instead of a link that would 404.
         st = drafts.get(p['title']) or {'status': 'none'}
-        if st.get('live'):
+        if CARD_LINKS.get(p['title']):
+            note, future = '', f' href="{esc(CARD_LINKS[p["title"]])}"'
+        elif st.get('live'):
             note, future = '', f' href="{LIVE}{st["path"]}"'
         else:
             note = {'published': 'Published, goes live with the brand pages release.',
